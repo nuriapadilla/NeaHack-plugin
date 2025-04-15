@@ -4,13 +4,11 @@ This Chrome extension allows users to preview and process clothing images from w
 
 ## ▶️ How to Run the Project
 
-### 🔧 1. Set up the Python Server (FastAPI)
-
-#### Requirements:
+### Requirements:
 - Python 3.8+
 - pip
 
-#### Step-by-step:
+### Step-by-step:
 
 ```bash
 # Create and activate virtual environment (recommended)
