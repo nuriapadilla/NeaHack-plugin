@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Zara Plugin Visor",
+    "version": "1.0",
+    "description": "Plugin amb iframe per provar roba virtual",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["viewer.html"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "host_permissions": [
+        "*://static.zara.net/*"
+      ]
+  }
+  

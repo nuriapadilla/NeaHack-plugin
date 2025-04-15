@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visor 3D</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      input {
+        width: 280px;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      button {
+        padding: 10px 14px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+
+      #info {
+        margin-top: 10px;
+        color: #666;
+        font-size: 14px;
+      }
+
+      #imatgeMostrada {
+        max-width: 200px;
+        margin-top: 20px;
+        display: none;
+        border: 1px solid #ccc;
+        padding: 5px;
+        background: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .url-bar {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Enganxa una imatge o una URL</h2>
+
+    <div class="url-bar">
+      <input id="urlInput" type="text" placeholder="Enganxa aquí la URL d’una imatge i prem Enter" />
+      <button id="processarBtn">⚙️ Processar imatge</button>
+    </div>
+
+    <div id="info">També pots fer <strong>Ctrl+V</strong> amb una imatge copiada</div>
+
+    <img id="imatgeMostrada" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
